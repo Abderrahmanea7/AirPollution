@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #E8ECD7, #47663B);
+    color: #333;
+}
+
+header {
+    background-color: #1F4529;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Sections */
+main {
+    padding: 20px;
+    margin-left: 40px;
+        margin-right: 40px;
+}
+
+footer p {
+    color: rgb(230, 227, 222);
+    text-align: center;
+}
+section {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons and Inputs */
+input[type="text"],
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: #4a7738;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/* Alerts and Messages */
+#alert-message {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Health Tips */
+#health-tips {
+    font-style: italic;
+    background-color: #fff8f0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+section {
+    animation: fadeIn 0.8s ease;
+}

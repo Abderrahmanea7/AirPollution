@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Suivi de la Pollution et de la Qualité de l'Air</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>HASA : Pollution And Air Quality</h1>
+    </header>
+    <main>
+        
+        <section id="city-selector">
+            <h2>Sélectionnez une Ville</h2>
+            <input type="text" id="city-input" placeholder="Entrez une ville">
+            <button id="fetch-data">Rechercher</button>
+        </section>
+
+        <section id="air-quality-overview">
+            <h2>Qualité de l'Air en Temps Réel</h2>
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+            <div id="pollution-details">
+                <h3>Détails des Polluants</h3>
+                <ul id="pollutants-list"></ul>
+            </div>
+        </section>
+
+        <section id="alerts">
+            <h2>Alertes et Notifications</h2>
+            <p id="alert-message">Chargement des données...</p>
+        </section>
+
+        <section id="health-tips">
+            <h2>Conseils Santé</h2>
+            <p id="health-advice">Restez à l'intérieur si les niveaux de pollution sont élevés.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet ODD 3 : Bonne Santé et Bien-Être | Développé pour sensibiliser le public à la pollution de l'air.</p>
+        <p>By: Bassam AKA Abderrahmane - Chaymae Ali - Sushi AKA Hamza - Choucha3 AKA Saad</p>
+    </footer>
+</body>
+
+</html>
